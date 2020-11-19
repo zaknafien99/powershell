@@ -1,0 +1,8 @@
+﻿  stats.cpp
+C:\Users\zakna\source\repos\stats\stats\stats.cpp(71,17): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\zakna\source\repos\stats\stats\stats.cpp(46,6): warning C4101: 'it': unreferenced local variable
+  stats.vcxproj -> C:\Users\zakna\source\repos\stats\Debug\stats.exe
