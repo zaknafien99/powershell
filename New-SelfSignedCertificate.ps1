@@ -35,3 +35,6 @@ remove-item $keyPath
 
 ## Retrieve the certificate
 Get-ChildItem cert:\currentuser\my -codesign | Where-Object { $_.Subject -match "PowerShell User"}
+
+#did this work
+#this is another change that should appear

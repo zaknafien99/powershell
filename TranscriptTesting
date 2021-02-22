@@ -1,0 +1,71 @@
+**********************
+PowerShell transcript start
+Start time: 20200620223330
+Username: DESKTOP-GN8IGPT\zakna
+RunAs User: DESKTOP-GN8IGPT\zakna
+Configuration Name: 
+Machine: DESKTOP-GN8IGPT (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\zakna\.vscode\extensions\ms-vscode.powershell-2020.6.0\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2020.6.0' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'c:\Users\zakna\.vscode\extensions\ms-vscode.powershell-2020.6.0\modules' -EnableConsoleRepl -StartupBanner "=====> PowerShell Integrated Console v2020.6.0 <=====
+" -LogLevel 'Normal' -LogPath 'c:\Users\zakna\.vscode\extensions\ms-vscode.powershell-2020.6.0\logs\1592654534-23335466-1f73-4c4c-8b84-8965f91b2f311592654508136\EditorServices.log' -SessionDetailsPath 'c:\Users\zakna\.vscode\extensions\ms-vscode.powershell-2020.6.0\sessions\PSES-VSCode-676-424803' -FeatureFlags @() 
+Process ID: 7324
+PSVersion: 7.0.2
+PSEdition: Core
+GitCommitId: 7.0.2
+OS: Microsoft Windows 10.0.18363
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.10032.0, 6.0.0, 6.1.0, 6.2.0, 7.0.2
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Users\zakna\OneDrive\Documents\PowerShell Scripts\TranscriptTesting
+
+Get-WinEvent: C:\Users\zakna\OneDrive\Documents\PowerShell Scripts\Testing.ps1:6:1
+Line |
+   6 |  Get-WinEvent -LogName "Security" -MaxEvents 5
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | To access the 'Security' log start PowerShell with elevated user rights.  Error: Attempted to perform an unauthorized operation.
+
+[91mGet-WinEvent: [0mC:\Users\zakna\OneDrive\Documents\PowerShell Scripts\Testing.ps1:6:1
+[96mLine |
+[96m   6 | [0m [96mGet-WinEvent -LogName "Security" -MaxEvents 5[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mTo access the 'Security' log start PowerShell with elevated user rights.  Error: Attempted to perform an
+[96m     | [91munauthorized operation.
+[0m
+
+Get-WinEvent: C:\Users\zakna\OneDrive\Documents\PowerShell Scripts\Testing.ps1:6:1
+Line |
+   6 |  Get-WinEvent -LogName "Security" -MaxEvents 5
+     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | There is not an event log on the localhost computer that matches "Security".
+
+[91mGet-WinEvent: [0mC:\Users\zakna\OneDrive\Documents\PowerShell Scripts\Testing.ps1:6:1
+[96mLine |
+[96m   6 | [0m [96mGet-WinEvent -LogName "Security" -MaxEvents 5[0m
+[96m     | [91m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[91m[96m     | [91mThere is not an event log on the localhost computer that matches "Security".
+[0m
+
+Caption          :
+Description      :
+ElementName      :
+InstanceID       : {FA1334F3-F9BA-4732-9B89-965059353D6A}
+InterfaceAlias   : Wi-Fi
+InterfaceIndex   : 23
+IPv4Connectivity : Internet
+IPv6Connectivity : Internet
+Name             : TelstraCB4063
+NetworkCategory  : Private
+PSComputerName   :
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      7324
+computerName                   DESKTOP-GN8IGPT
+instanceId                     f1a33749-82e0-40a9-bb46-0d874892d898
+
